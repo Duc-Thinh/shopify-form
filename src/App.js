@@ -461,16 +461,16 @@ function App() {
       <Page fullWidth>
         <form onSubmit={onSubmit}>
           {renderPrev}
-          <Grid>
+          <Grid xs={12}>
             <Grid.Cell columnSpan={{ xs: 6, sm: 6, md: 6, lg: 6, xl: 6 }}>
-              <Grid>
+              <Grid columnSpan={{md: 12}}>
                 <Grid.Cell
-                  columnSpan={{ xs: 12, sm: 12, md: 12, lg: 12, xl: 12 }}
+                  columnSpan={{ xs: 6, sm: 6, md: 6, lg: 12, xl: 12 }}
                 >
                   {renderGeneral}
                 </Grid.Cell>
                 <Grid.Cell
-                  columnSpan={{ xs: 12, sm: 12, md: 12, lg: 12, xl: 12 }}
+                  columnSpan={{ xs: 6, sm: 6, md: 6, lg: 12, xl: 12 }}
                 >
                   {renderVolumeDiscountRule}
                 </Grid.Cell>
